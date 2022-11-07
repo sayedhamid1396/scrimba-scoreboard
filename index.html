@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> -->
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="scoreboard">
+                <h3 class="" id="home-team">HOME</h3>
+                <div class="score__box">
+                    <p class="score pink-text" id="home-score">0</p>
+                </div>
+                <div class="btn__score">
+                    
+                    <button class="btn" onclick='addScore("home",1)'>+ 1</button>
+                    <button class="btn" onclick='addScore("home",2)'>+ 2</button>
+                    <button class="btn" onclick='addScore("home",3)'>+ 3</button>
+                </div>
+            </div>
+            <div class="scoreboard">
+                <h3 class="" id="guest-team">GUEST</h3>
+                <div class="score__box">
+                    <p class="score pink-text" id="guest-score">0</p>
+                </div>
+                <div class="btn__score">
+                   
+                    <button class="btn" onclick='addScore("guest",1)'>+ 1</button>
+                    <button class="btn" onclick='addScore("guest",2)'>+ 2</button>
+                    <button class="btn" onclick='addScore("guest",3)'>+ 3</button>
+                </div>
+            </div>
+            <button class="newGame" id="new-game">New Game</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
